@@ -1,0 +1,141 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    max-width: 1280px;
+    margin: 0 auto;
+    background: linear-gradient(180deg, rgba(255, 147, 0, 1) 11%, rgba(255, 220, 0, 1) 49%, rgba(0, 0, 0, 1) 86%);
+}
+
+body.modo-escuro {
+    background: linear-gradient(180deg, rgba(2, 0, 37, 1) 11%, rgba(0, 80, 133, 1) 49%, rgba(0, 0, 0, 1) 86%);
+    color: #000000;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+header .logo,
+header .imagem-botao {
+    width: 30px;
+    transition: 0.2s ease-in-out;
+}
+
+header #botao-alterar-tema {
+    background: none;
+    border: none;
+}
+
+header .logo:hover,
+header .imagem-botao:hover,
+main .cartao-pokemon:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+main {
+    padding: 25px;
+
+}
+
+main .listagem-pokemon {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+main .cartao-pokemon {
+    width: 200px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-radius: 15px;
+    border-radius: 10px;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(145deg, rgba(255, 255, 255, 1) 5%, rgba(139, 139, 139, 1) 100%);
+}
+
+header .cartao-pokemon:hover {
+    background-color: #96d9d6;
+}
+
+
+.modo-escuro .cartao-pokemon {
+    background-color: #a8a8a8;
+}
+
+main .cartao-pokemon .informacoes {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 7px;
+}
+
+.img-type {
+    display: flex;
+    padding-left: 160px;
+    width: 25px;
+    height: 25px;
+}
+
+main .cartao-pokemon .informacoes span {
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+main .cartao-pokemon .gif {
+    width: 70px;
+    height: 70px;
+}
+
+main .cartao-pokemon .tipos {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+main .cartao-pokemon .tipos {
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.tipo-grama {
+    padding: 9px;
+    border-radius: 10px;
+    background-color: #7ac74c;
+}
+
+.tipo-veneno {
+    padding: 9px;
+    border-radius: 10px;
+    background-color: violet;
+}
+
+.tipo-fogo {
+    padding: 9px;
+    border-radius: 10px;
+    background-color: #ee8130;
+}
+
+.tipo-agua {
+    padding: 9px;
+    border-radius: 10px;
+    background-color: #6390f0;
+}
+
+.tipo-inseto {
+    padding: 9px;
+    border-radius: 10px;
+    background-color: #a7b91a;
+}
+
+main .descricao {
+    max-height: 80px;
+    overflow-y: scroll;
+    font-size: 14px;
+    padding-right: 10px;
+}
